@@ -1,0 +1,7 @@
+tensorflow~=2.16.1
+tensorflow-model-optimization~=0.8.0
+tf_keras~=2.16.0
+opencv-python~=4.10.0.82
+numpy~=1.26.4
+matplotlib~=3.9.0
+scikit-learn~=1.5.0

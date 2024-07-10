@@ -1,0 +1,6 @@
+/data/*
+/models/model_checkpoint/*
+/models/quantize_aware_model_checkpoint/*
+!/data/.gitinclude
+!/models/model_checkpoint/.gitinclude
+!/models/quantize_aware_model_checkpoint/.gitinclude
