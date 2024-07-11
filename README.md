@@ -1,21 +1,18 @@
 # :camera: PatchMatch: Fast, Efficient and Robust Image Matching
 
-![orb.gif](media/orb.gif)
 ![patchmatch.gif](media/patchmatch.gif)
+![orb.gif](media/orb.gif)
 
-<figure>
-  <img src="media/patchmatch.png" alt="">
-  <figcaption>
-    <center> PatchMatch able to get correct homography estimation in case of large viewpoint change. </center>
-  </figcaption>
-</figure>
+<p align="center">
+  <img src="media/patchmatch.png">
+  PatchMatch able to get correct homography estimation in case of large viewpoint change.
+</p>
 
-<figure>
-  <img src="media/orb.png" alt="">
-  <figcaption>
-    <center> ORB descriptor-based matching leads to incorrect homography estimation. </center>
-  </figcaption>
-</figure>
+<p align="center">
+  <img src="media/orb.png">
+  ORB descriptor-based matching leads to incorrect homography estimation.
+</p>
+
 
 ## Table of Contents
 - [Introduction](#introduction)
