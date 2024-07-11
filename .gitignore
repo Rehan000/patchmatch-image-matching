@@ -1,4 +1,5 @@
 /data/*
+/media/sequence_50
 /models/model_checkpoint/*
 /models/quantize_aware_model_checkpoint/*
 !/data/.gitinclude

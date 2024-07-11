@@ -1,7 +1,21 @@
 # :camera: PatchMatch: Fast, Efficient and Robust Image Matching
 
-![patchmatch.png](media/patchmatch.png)
-![orb.png](media/orb.png)
+![orb.gif](media/orb.gif)
+![patchmatch.gif](media/patchmatch.gif)
+
+<figure>
+  <img src="media/patchmatch.png" alt="">
+  <figcaption>
+    <center> PatchMatch able to get correct homography estimation in case of large viewpoint change. </center>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="media/orb.png" alt="">
+  <figcaption>
+    <center> ORB descriptor-based matching leads to incorrect homography estimation. </center>
+  </figcaption>
+</figure>
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -16,7 +30,8 @@
   - [Quantize-Aware Training](#quantize-aware-training)
   - [Evaluation](#evaluation)
   - [Inference](#inference)
-- [Features](#features)
+- [Local Features Implemented](#local-features-implemented)
+- [License](#license)
 
 ## Introduction
 Introducing PatchMatch, a lightweight image matching pipeline for fast,
@@ -166,7 +181,7 @@ pm = PatchMatch(num_features=1000, match_feature='ORB')
 pts_1, pts_2 = pm.match_two_images(image_1, image_2)
 ```
 
-## Features
+## Local Features Implemented
 The following local features are implemented until now with the PatchMatch pipeline,
 further contributions to include other local features are welcome.
 
@@ -180,3 +195,5 @@ further contributions to include other local features are welcome.
 Note: Not much improvement is noted in case of SIFT local features between PatchMatch and
 descriptor-based matching, although improvement is noted in case of ORB features.
 
+## License
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)

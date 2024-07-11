@@ -5,48 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1ca659d9-f8b6-41a3-b379-cd660d732c29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/PatchMatch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_Model_Accuracy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_Model_Confusion_Matrix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_Model_Loss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_Model_Precision.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_Model_Recall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_QA_Model_Accuracy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_QA_Model_Confusion_Matrix.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_QA_Model_Loss.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_QA_Model_Precision.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analytics/PatchMatch_QA_Model_Recall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/model_architecture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/orb.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/patchmatch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/model_checkpoint/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/quantize_aware_model_checkpoint/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/saved_model/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/saved_model/PatchMatch_Model.keras" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/tflite_model/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/tflite_model/PatchMatch_TFLite.tflite" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/__innit__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/data_loader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/generate_patches.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/model.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/patchmatch.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/.gitinclude" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/PatchMatch Matching Example-checkpoint.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notebooks/PatchMatch Matching Example.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/evaluate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/train.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/orb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/patchmatch.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/PatchMatch Evaluation on VO Dataset-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notebooks/PatchMatch Evaluation on VO Dataset.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/orb.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/orb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/patchmatch.png" beforeDir="false" afterPath="$PROJECT_DIR$/media/patchmatch.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/PatchMatch Matching Example-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/PatchMatch Matching Example-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/PatchMatch Matching Example.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/PatchMatch Matching Example.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,5 +93,16 @@
       <updated>1718125586935</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
