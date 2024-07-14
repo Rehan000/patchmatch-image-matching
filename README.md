@@ -28,6 +28,7 @@
   - [Evaluation](#evaluation)
   - [Inference](#inference)
 - [Local Features Implemented](#local-features-implemented)
+- [Timing Analysis on CPU](#timing-analysis-on-cpu)
 - [License](#license)
 
 ## Introduction
