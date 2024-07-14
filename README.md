@@ -192,5 +192,13 @@ further contributions to include other local features are welcome.
 Note: Not much improvement is noted in case of SIFT local features between PatchMatch and
 descriptor-based matching, although improvement is noted in case of ORB features.
 
+## Timing Analysis on CPU
+![timing_analysis.png](media/timing_analysis.png)
+
+We performed comparison of ORB vs PatchMatch on one set from HPatches resized (640x480) dataset (v_abstract). 
+We observe the average number of matches increase by more than 2x as compared to ORB while the FPS is ~12 on CPU
+(Intel Core i7-9750H).
+
+
 ## License
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
