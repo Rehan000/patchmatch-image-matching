@@ -13,7 +13,7 @@ class PatchMatch:
     """
     def __init__(self,
                  tflite_model=os.path.abspath(os.path.join('..', 'models/tflite_model/PatchMatch_TFLite.tflite')),
-                 num_features=1000,
+                 num_features=2000,
                  patch_size=40,
                  match_feature='ORB',
                  k=3,
@@ -67,8 +67,10 @@ class PatchMatch:
             feature = cv2.KAZE_create()
         elif self.match_feature == 'AKAZE':
             feature = cv2.AKAZE_create()
+        elif self.match_feature == 'BRISK':
+            feature = cv2.BRISK_create()
         else:
-            raise TypeError("Select 'ORB', 'SIFT' or 'KAZE' as options for local features.")
+            raise TypeError("Select 'ORB', 'SIFT', 'KAZE', 'AKAZE' or 'BRISK'  as options for local features.")
 
         kps, des = feature.detectAndCompute(image, None)
 
@@ -89,8 +91,10 @@ class PatchMatch:
             bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
         elif self.match_feature == 'AKAZE':
             bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)
+        elif self.match_feature == 'BRISK':
+            bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)
         else:
-            raise TypeError("Select 'ORB', 'SIFT' or 'KAZE' as options for local features.")
+            raise TypeError("Select 'ORB', 'SIFT', 'KAZE', 'AKAZE' or 'BRISK' as options for local features.")
 
         matches = bf.knnMatch(des_1, des_2, k=self.k)
 
@@ -155,6 +159,11 @@ class PatchMatch:
 
         points_1 = np.array(points_1, dtype=np.int32)[valid_indices]
         points_2 = np.array(points_2, dtype=np.int32)[valid_indices]
+
+        points_1 = points_1[:self.num_features * self.k]
+        points_2 = points_2[:self.num_features * self.k]
+        patches_1 = patches_1[:self.num_features * self.k]
+        patches_2 = patches_2[:self.num_features * self.k]
 
         return points_1, points_2, patches_1, patches_2
 

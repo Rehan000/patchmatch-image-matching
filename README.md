@@ -59,7 +59,7 @@ where it can be used are:
 :arrow_right: 3D Reconstruction <br /> 
 
 ### Capabilities
-:white_check_mark: Local image features ORB, SIFT, KAZE and AKAZE implemented for now. <br />
+:white_check_mark: Local image features ORB, SIFT, KAZE, AKAZE and BRISK implemented for now. <br />
 :white_check_mark: TFLite Quantized lightweight CNN model for fast keypoint matching. <br />
 :white_check_mark: Hardware-agnostic, designed to run on CPU based devices. <br />
 :white_check_mark: Close to realtime matching on VGA resolution (640x480) images on CPU. <br />
@@ -187,11 +187,11 @@ further contributions to include other local features are welcome.
 :white_check_mark: SIFT <br />
 :white_check_mark: KAZE <br />
 :white_check_mark: AKAZE <br />
+:white_check_mark: BRISK <br />
 :x: SURF <br />
-:x: BRISK <br />
 
 Note: Not much improvement is noted in case of SIFT local features between PatchMatch and
-descriptor-based matching, although improvement is noted in case of ORB, KAZE and AKAZE features.
+descriptor-based matching, although improvement is noted in case of ORB, KAZE, AKAZE and BRISK features.
 
 ## Timing Analysis on CPU
 ![timing_analysis.png](media/timing_analysis.png)
