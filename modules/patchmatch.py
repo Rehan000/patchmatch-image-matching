@@ -13,7 +13,7 @@ class PatchMatch:
     """
     def __init__(self,
                  tflite_model=os.path.abspath(os.path.join('..', 'models/tflite_model/PatchMatch_TFLite.tflite')),
-                 num_features=500,
+                 num_features=1000,
                  patch_size=40,
                  match_feature='ORB',
                  k=3,
@@ -65,6 +65,8 @@ class PatchMatch:
             feature = cv2.SIFT_create(nfeatures=self.num_features)
         elif self.match_feature == 'KAZE':
             feature = cv2.KAZE_create()
+        elif self.match_feature == 'AKAZE':
+            feature = cv2.AKAZE_create()
         else:
             raise TypeError("Select 'ORB', 'SIFT' or 'KAZE' as options for local features.")
 
@@ -85,6 +87,8 @@ class PatchMatch:
             bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
         elif self.match_feature == 'KAZE':
             bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
+        elif self.match_feature == 'AKAZE':
+            bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)
         else:
             raise TypeError("Select 'ORB', 'SIFT' or 'KAZE' as options for local features.")
 

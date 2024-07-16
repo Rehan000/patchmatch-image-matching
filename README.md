@@ -186,12 +186,12 @@ further contributions to include other local features are welcome.
 :white_check_mark: ORB <br />
 :white_check_mark: SIFT <br />
 :white_check_mark: KAZE <br />
+:white_check_mark: AKAZE <br />
 :x: SURF <br />
-:x: AKAZE <br />
 :x: BRISK <br />
 
 Note: Not much improvement is noted in case of SIFT local features between PatchMatch and
-descriptor-based matching, although improvement is noted in case of ORB and KAZE features.
+descriptor-based matching, although improvement is noted in case of ORB, KAZE and AKAZE features.
 
 ## Timing Analysis on CPU
 ![timing_analysis.png](media/timing_analysis.png)
