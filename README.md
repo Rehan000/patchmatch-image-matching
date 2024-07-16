@@ -59,7 +59,7 @@ where it can be used are:
 :arrow_right: 3D Reconstruction <br /> 
 
 ### Capabilities
-:white_check_mark: Local image features, ORB and SIFT implemented for now. <br />
+:white_check_mark: Local image features ORB, SIFT, KAZE and AKAZE implemented for now. <br />
 :white_check_mark: TFLite Quantized lightweight CNN model for fast keypoint matching. <br />
 :white_check_mark: Hardware-agnostic, designed to run on CPU based devices. <br />
 :white_check_mark: Close to realtime matching on VGA resolution (640x480) images on CPU. <br />
