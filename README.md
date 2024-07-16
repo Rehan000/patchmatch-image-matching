@@ -42,7 +42,7 @@ suggests that we extract and compare patches around the detected keypoints using
 lightweight CNN model.
 
 ### Working Principle
-1. Detect local features in an image. (ORB or SIFT)
+1. Detect local features in an image.
 2. Extract top-k matches from local features.
 3. Extract patches around top-k matches.
 4. Validate and filter matches using PatchMatch model.
@@ -185,13 +185,13 @@ further contributions to include other local features are welcome.
 
 :white_check_mark: ORB <br />
 :white_check_mark: SIFT <br />
+:white_check_mark: KAZE <br />
 :x: SURF <br />
-:x: KAZE <br />
 :x: AKAZE <br />
 :x: BRISK <br />
 
 Note: Not much improvement is noted in case of SIFT local features between PatchMatch and
-descriptor-based matching, although improvement is noted in case of ORB features.
+descriptor-based matching, although improvement is noted in case of ORB and KAZE features.
 
 ## Timing Analysis on CPU
 ![timing_analysis.png](media/timing_analysis.png)

@@ -23,7 +23,7 @@ class PatchMatch:
         :param tflite_model: Path to TFLite model
         :param num_features: Number of local features to detect in image
         :param patch_size: Size to the patch to extract
-        :param match_feature: Local feature to detect in image ('ORB' or 'SIFT')
+        :param match_feature: Local feature to detect in image
         :param k: Top k matches to consider
         :param model_confidence: Model confidence to filter predictions
         """
@@ -63,8 +63,10 @@ class PatchMatch:
             feature = cv2.ORB_create(nfeatures=self.num_features)
         elif self.match_feature == 'SIFT':
             feature = cv2.SIFT_create(nfeatures=self.num_features)
+        elif self.match_feature == 'KAZE':
+            feature = cv2.KAZE_create()
         else:
-            raise TypeError("Select 'ORB' or 'SIFT' as options for local features.")
+            raise TypeError("Select 'ORB', 'SIFT' or 'KAZE' as options for local features.")
 
         kps, des = feature.detectAndCompute(image, None)
 
@@ -81,8 +83,10 @@ class PatchMatch:
             bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)
         elif self.match_feature == 'SIFT':
             bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
+        elif self.match_feature == 'KAZE':
+            bf = cv2.BFMatcher(cv2.NORM_L2, crossCheck=False)
         else:
-            raise TypeError("Select 'ORB' or 'SIFT' as options for local features.")
+            raise TypeError("Select 'ORB', 'SIFT' or 'KAZE' as options for local features.")
 
         matches = bf.knnMatch(des_1, des_2, k=self.k)
 
