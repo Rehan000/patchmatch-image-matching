@@ -5,3 +5,4 @@
 !/data/.gitinclude
 !/models/model_checkpoint/.gitinclude
 !/models/quantize_aware_model_checkpoint/.gitinclude
+Test.ipynb

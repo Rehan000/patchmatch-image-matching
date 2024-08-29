@@ -12,7 +12,7 @@ class PatchMatch:
     PatchMatch class to perform efficient, robust and fast image matching.
     """
     def __init__(self,
-                 tflite_model=os.path.abspath(os.path.join('..', 'models/tflite_model/PatchMatch_TFLite.tflite')),
+                 tflite_model = './models/tflite_model/PatchMatch_TFLite.tflite',
                  num_features=2000,
                  patch_size=40,
                  match_feature='ORB',
